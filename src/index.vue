@@ -4,11 +4,7 @@
                title-type="icon"
                @wxcTabBarCurrentTabSelected="wxcTabBarCurrentTabSelected">
     <!-- 第一个页面内容-->
-    <div class="item-container" :style="contentStyle">
-      
-      <text>首页</text>
-
-    </div>
+    <div class="item-container" :style="contentStyle"><text>首页</text></div>
 
     <!-- 第二个页面内容-->
     <div class="item-container" :style="contentStyle"><text>特别推荐</text></div>
@@ -41,19 +37,19 @@
       tabTitles: [
         {
           title: '首页',
-          codePoint: '\e6e2'
+          codePoint: '\ue623'
         },
         {
-          title: '特别推荐',
+          title: '美文',
           codePoint: '\ue752'
         },
         {
-          title: '消息中心',
+          title: '通知',
           codePoint: '\ue752',
           badge: 5
         },
         {
-          title: '我的主页',
+          title: '我',
           codePoint: '\ue752',
         }
       ],
@@ -72,7 +68,7 @@
         iconFontMarginBottom: 8,
         iconFontColor: '#333333',
         activeIconFontColor: 'red',
-        iconFontUrl: '//at.alicdn.com/t/font_714094_7sicwwcmkrq.ttf'
+        iconFontUrl: '//at.alicdn.com/t/font_501019_mauqv15evc1pp66r.ttf'
     },
     }),
     created () {
@@ -85,7 +81,6 @@
     methods: {
       wxcTabBarCurrentTabSelected (e) {
         const index = e.page;
-        // console.log(index);
       }
     }
   };
